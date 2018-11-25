@@ -3,17 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Repositories\RepositoryInterface;
 use App\Book;
 
 class BookController extends Controller
 {
+
+	public function __construct(RepositoryInterface $bookRepository) {
+		$this->bookRepository = $bookRepository;
+	}
     public function index() {
-    	$books = Book::all();
-    	return $books;
+    	return $this->bookRepository->all();
     }
 
     public function show($id) {
-    	$book = Book::findOrFail($id);
-    	return $book;
+    	return $this->bookRepository->getById($id);
     }
 }
