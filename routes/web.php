@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+/*
+Our Author routes
+*/
+Route::get('/authors', 'AuthorController@index');
+Route::get('/author/{id}', 'AuthorController@show');
+/*
+Our Books routes
+*/
+Route::get('/books', 'BookController@index');
+Route::get('/book/{id}', 'BookController@show');
+
+
