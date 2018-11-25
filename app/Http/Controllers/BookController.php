@@ -3,14 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Book;
 
 class BookController extends Controller
 {
     public function index() {
-    	return 'all books';
+    	$books = Book::all();
+    	return $books;
     }
 
     public function show($id) {
-    	return 'book with id ' . $id;
+    	$book = Book::findOrFail($id);
+    	return $book;
     }
 }

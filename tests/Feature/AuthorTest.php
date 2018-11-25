@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Author;
 
 class AuthorTest extends TestCase
 {
@@ -12,6 +13,8 @@ class AuthorTest extends TestCase
      *
      * @return void
      */
+    use RefreshDatabase;
+
     public function testCanSeeAuthors()
     {
         $response = $this->get('/authors');
@@ -21,8 +24,23 @@ class AuthorTest extends TestCase
 
     public function testCanSeeAuthorByItsId()
     {
-        $response = $this->get('/author/{id}');
+       $author = factory('App\Author',1)->create();
 
-        $response->assertStatus(200);
+        foreach ($author as $au) {
+            $response = $this->get('/author/' . $au->id);
+            $response->assertStatus(200);
+        }
     }
+
+    // public function testCanSeeAuthorBooks() 
+    // {
+    //     $author = factory('App\Author',1)->create();
+    //     $book = factory('App\Book',1)->create();
+
+    //      foreach ($book as $b) {
+    //         $response = $this->get('/author/books/' . $b->id);
+    //         $response->assertStatus(200);
+    //     }
+
+    // }
 }

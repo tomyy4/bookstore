@@ -21,6 +21,9 @@ Our Author routes
 */
 Route::get('/authors', 'AuthorController@index');
 Route::get('/author/{id}', 'AuthorController@show');
+Route::get('author/{id}/books', 'AuthorController@books');
+
+
 /*
 Our Books routes
 */
