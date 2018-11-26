@@ -15,7 +15,7 @@ class SqlBookRepository implements RepositoryInterface
 
 	public function getById($id) 
 	{
-		$book = find($id);
+		$book = Book::find($id);
 		return $book;
 	}
 
