@@ -22,7 +22,9 @@ class BookService {
 	}
 
 	
-
+	public function getBookByTitle($title) {
+		return $this->book->getByTitle($title);
+	}
 	
 	
 }

@@ -9,14 +9,23 @@ use App\Book;
 class BookController extends Controller
 {
 
-	public function __construct(BookService $bookService) {
+	public function __construct(BookService $bookService) 
+	{
 		$this->bookService = $bookService;
 	}
-    public function index() {
+
+    public function index() 
+    {
     	return $this->bookService->getAllBooks();
     }
 
-    public function show($id) {
+    public function show($id) 
+    {
     	return $this->bookService->getBookById($id);
+    }
+
+    public function title($title) 
+    {
+    	return $this->bookService->getBookByTitle($title);
     }
 }

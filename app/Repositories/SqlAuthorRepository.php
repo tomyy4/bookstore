@@ -20,4 +20,9 @@ class SqlAuthorRepository implements RepositoryInterface {
 		$authorBooks = Author::find($id)->books;
     	return $authorBooks;
 	}
+
+	public function getByName($name) {
+		$author = Author::where('name','like', $name . '%')->first();
+		return $author;
+	}
 }

@@ -25,6 +25,10 @@ class AuthorService {
 	{
 		return $this->author->getAuthorsBook($id);
 	}
+
+	public function getAuthorByName($name) {
+		return $this->author->getByName($name);
+	}
 	
 	
 }

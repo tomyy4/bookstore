@@ -27,4 +27,8 @@ class AuthorController extends Controller
     {
     	return $this->authorService->getBooksAuthor($id);
     }
+
+    public function name($name) {
+        return $this->authorService->getAuthorByName($name);
+    }
 }
