@@ -11,10 +11,12 @@ class Book extends Model
     ];
 
     protected $hidden  = [
-    	'created_at', 'updated_at'
+    	'created_at', 'updated_at','author_id'
     ];
 
-    public function authors() {
+    public function author() {
     	return $this->belongsTo('App\Author','author_id');
     }
+
+  
 }

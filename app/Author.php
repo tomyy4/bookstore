@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Author extends Model
 {
     protected $fillable = [
-    	'name','country','date_of_birth'
+    	'name','country','biography','date_of_birth'
     ];
 
     protected $hidden  = [
@@ -15,6 +15,6 @@ class Author extends Model
     ];
 
     public function books() {
-    	return $this->hasMany('App\Book','author_id');
+    	return $this->hasMany('App\Book');
     }
 }

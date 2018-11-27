@@ -17,7 +17,7 @@ class BooksTableSeeder extends Seeder
         	'title' => 'Pride and Prejudice',
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1813-01-28',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 5
         	],
         	[ 
@@ -25,21 +25,21 @@ class BooksTableSeeder extends Seeder
         	'title' => 'Mansfield Park',
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1814-07-01',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 5
         	],
         	['id' => 3,
         	'title' => 'A Game of Thrones',
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1996-08-01',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 2
         	],
         	['id' => 4,
         	'title' => 'A Clash Of Kings',
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1998-11-16',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 2
         	],
         	[
@@ -47,7 +47,7 @@ class BooksTableSeeder extends Seeder
         	'title' => "Harry Potter and the Philosopher's Stone",
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1997-01-01',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 1
         	],
         	[
@@ -55,21 +55,21 @@ class BooksTableSeeder extends Seeder
         	'title' => "Harry Potter and the Chamber of Secrets",
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1998-07-02',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 1
         	],[
         	'id' => 7,
         	'title' => "A Room of One's Own",
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1929-09-01',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 3
         	],[
         	'id' => 8,
         	'title' => "To the Lighthouse",
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1927-05-05',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 3
         	],
         	[
@@ -77,14 +77,14 @@ class BooksTableSeeder extends Seeder
         	'title' => "For Whom the Bell Tolls",
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1940-10-21',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 4
         	],[
         	'id' => 10,
         	'title' => "The Old Man and the Sea",
         	'sinopsis' => 'Some sinopsis',
         	'published_in' => '1952-01-01',
-        	'img' => 'https://pixabay.com/go/?t=image-list-shutterstock&id=509582812',
+        	'img' => 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&s=5d1e7481e42e2ff1a261966aee5c2f9d&auto=format&fit=crop&w=500&q=60',
         	'author_id' => 4
         	]
         ];
