@@ -25,7 +25,7 @@ class BookService {
 
 	
 	public function storeBook(Request $request)
-	 {
+	{
 		$validator = Validator::make($request->all(), [
              'title' => 'required',
              'sinposis' => 'required',
@@ -39,12 +39,16 @@ class BookService {
         $this->book->store($request->all());
   		return response()->json('Created succesfully');
 	}
+
 	public function getBookByTitle($title) 
 	{
-		if (!$title) {
-			return 'Book Does not exist';
-		}
 		return $this->book->getByTitle($title);
+	}
+
+	public function deleteBook($id) 
+	{
+		$this->book->delete($id);
+		return 'book deleted';
 	}
 	
 	

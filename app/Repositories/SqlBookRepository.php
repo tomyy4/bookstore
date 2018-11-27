@@ -14,7 +14,6 @@ class SqlBookRepository implements RepositoryInterface
   //   	}))->get();
 
     	$books = Book::with('author')->get();
-
     	return $books;
 
 	}
@@ -34,6 +33,12 @@ class SqlBookRepository implements RepositoryInterface
 	{
 		$book = Book::where('title','like', $title .'%')->first();
 		return $book;
+	}
+
+	public function delete($id)
+	{
+		$book = Book::findOrFail($id);
+		$book->delete();
 	}
 
 	

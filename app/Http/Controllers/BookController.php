@@ -29,6 +29,11 @@ class BookController extends Controller
         return $this->bookService->storeBook($request);
     }
 
+    public function destroy($id)
+    {
+        return $this->bookService->deleteBook($id);
+    }
+    
     public function title($title) 
     {
     	return $this->bookService->getBookByTitle($title);
