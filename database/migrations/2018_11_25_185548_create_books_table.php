@@ -20,7 +20,6 @@ class CreateBooksTable extends Migration
             $table->date('published_in');
             $table->string('img');
             $table->integer('author_id');
-            //$table->foreign('author_id')->references('id')->on('authors');
             $table->timestamps();
         });
     }
