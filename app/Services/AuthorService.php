@@ -3,7 +3,6 @@
 namespace App\Services;
 use App\Repositories\SqlAuthorRepository;
 use Illuminate\Http\Request;
-
 use Validator;
 
 

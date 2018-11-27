@@ -13,9 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 /*
 Our Author routes
@@ -33,4 +33,5 @@ Our Books routes
 
 Route::get('/books', 'BookController@index');
 Route::get('/book/{id}', 'BookController@show');
+Route::post('/book/add', 'BookController@store');
 Route::get('/books/book/{title}', 'BookController@title');

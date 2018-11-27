@@ -24,6 +24,11 @@ class BookController extends Controller
     	return $this->bookService->getBookById($id);
     }
 
+    public function store(Request $request)
+    {
+        return $this->bookService->storeBook($request);
+    }
+
     public function title($title) 
     {
     	return $this->bookService->getBookByTitle($title);

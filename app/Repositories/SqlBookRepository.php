@@ -25,6 +25,11 @@ class SqlBookRepository implements RepositoryInterface
 		return $book;
 	}
 
+	public function store(array $data)
+	{
+		$book = Book::create($data);
+	}
+
 	public function getByTitle($title) 
 	{
 		$book = Book::where('title','like', $title .'%')->first();

@@ -2,6 +2,8 @@
 
 namespace App\Services;
 use App\Repositories\SqlBookRepository;
+use Illuminate\Http\Request;
+use Validator;
 
 class BookService {
 
@@ -22,7 +24,23 @@ class BookService {
 	}
 
 	
-	public function getBookByTitle($title) {
+	public function storeBook(Request $request)
+	 {
+		$validator = Validator::make($request->all(), [
+             'title' => 'required',
+             'sinposis' => 'required',
+             'published_in' => 'required|date',
+             'img' => 'required',
+             'author_id' => 'required|integer'
+        ]);
+        
+        //store the book
+      
+        $this->book->store($request->all());
+  		return response()->json('Created succesfully');
+	}
+	public function getBookByTitle($title) 
+	{
 		if (!$title) {
 			return 'Book Does not exist';
 		}
