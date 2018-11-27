@@ -23,12 +23,18 @@ class AuthorController extends Controller
     	return $this->authorService->getAuthorById($id);
     }
 
+    public function store(Request $request) 
+    {
+        return $this->authorService->storeAuthor($request);
+    }
+
     public function books($id) 
     {
     	return $this->authorService->getBooksAuthor($id);
     }
 
-    public function name($name) {
+    public function name($name)
+    {
         return $this->authorService->getAuthorByName($name);
     }
 }

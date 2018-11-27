@@ -23,6 +23,9 @@ class BookService {
 
 	
 	public function getBookByTitle($title) {
+		if (!$title) {
+			return 'Book Does not exist';
+		}
 		return $this->book->getByTitle($title);
 	}
 	

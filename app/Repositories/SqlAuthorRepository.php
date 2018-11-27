@@ -16,6 +16,10 @@ class SqlAuthorRepository implements RepositoryInterface {
 		return $author;
 	}
 
+	public function store(array $data) {
+		$author = Author::create($data);
+	}
+
 	public function getAuthorsBook($id) {
 		$authorBooks = Author::find($id)->books;
     	return $authorBooks;

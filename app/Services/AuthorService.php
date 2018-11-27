@@ -2,6 +2,8 @@
 
 namespace App\Services;
 use App\Repositories\SqlAuthorRepository;
+use Validator;
+
 
 class AuthorService {
 
@@ -19,6 +21,20 @@ class AuthorService {
 	public function getAuthorById($id) 
 	{
 		return $this->author->getById($id);
+	}
+
+	public function storeAuthor(Request $request)
+	{
+		$validator = Validator::make($request->all(), [
+             'name' => 'required',
+             'country' => 'required',
+             'date_of_birth' => 'required|date'
+        ]);
+        
+        //store the author
+      
+        $this->author->store($request->all());
+  		return response()->json('Created succesfully');
 	}
 
 	public function getBooksAuthor($id) 
