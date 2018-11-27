@@ -7,7 +7,7 @@ use App\Author;
 class SqlAuthorRepository implements RepositoryInterface {
 
 	public function getAll() {
-		$authors = Author::all();
+		$authors = Author::with('books')->get();
 		return $authors;
 	}
 

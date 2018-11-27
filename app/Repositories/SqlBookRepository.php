@@ -9,8 +9,14 @@ class SqlBookRepository implements RepositoryInterface
 
 	public function getAll() 
 	{
-		$books = Book::all();
-		return $books;
+		// $books = Book::with(array('author'=>function($query){
+  //       	$query->select('name');
+  //   	}))->get();
+
+    	$books = Book::with('author')->get();
+
+    	return $books;
+
 	}
 
 	public function getById($id) 
