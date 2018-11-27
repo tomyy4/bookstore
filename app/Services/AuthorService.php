@@ -43,8 +43,16 @@ class AuthorService {
 		return $this->author->getAuthorsBook($id);
 	}
 
-	public function getAuthorByName($name) {
+	public function getAuthorByName($name) 
+	{
 		return $this->author->getByName($name);
+	}
+
+	public function deleteAuthor($id) 
+	{
+
+		$this->author->delete($id);
+		return 'deleted';
 	}
 	
 	

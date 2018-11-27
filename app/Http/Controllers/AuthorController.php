@@ -28,6 +28,11 @@ class AuthorController extends Controller
         return $this->authorService->storeAuthor($request);
     }
 
+    public function destroy($id) 
+    {
+        return $this->authorService->deleteAuthor($id);
+    }
+
     public function books($id) 
     {
     	return $this->authorService->getBooksAuthor($id);
