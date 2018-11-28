@@ -1,7 +1,7 @@
 ### Prerequisites
 
 - Composer
-
+- Install Laravel with composer: "composer global require laravel/installer"
 If you are not using Homestead, you will need to make sure your server meets the following requirements:
 
 - PHP >= 7.1.3
@@ -24,3 +24,16 @@ If you are not using Homestead, you will need to make sure your server meets the
 - run "php artisan serve"
 
 
+### Endpoints
+
+Authors:
+- api/authors
+- api/author/{id}
+- api/authors/author/books
+
+Books:
+- api/books
+- api/book/{id}
+- api/books/book/{title}
+
+You can check all the routes in the api.php file.
